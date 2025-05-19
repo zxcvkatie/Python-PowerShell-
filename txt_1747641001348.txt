@@ -1,0 +1,49 @@
+import time
+
+# 模擬PowerShell中常見的命令
+def start_habit(habit_name):
+    print(f"Starting your habit: {habit_name}")
+    time.sleep(1)
+    print(f"Congratulations! Your habit '{habit_name}' has been successfully started.")
+
+def stop_habit(habit_name):
+    print(f"Stopping your habit: {habit_name}")
+    time.sleep(1)
+    print(f"Your habit '{habit_name}' has been successfully stopped.")
+
+def track_progress(habit_name, days):
+    print(f"Tracking your habit '{habit_name}' for {days} days.")
+    time.sleep(1)
+    print(f"Your progress is on track! You have built consistency over {days} days.")
+
+def habit_identity(habit_name):
+    print(f"Transforming your identity with the habit: {habit_name}")
+    print(f"You are becoming a person who practices '{habit_name}' consistently!")
+
+def habit_stack(habit_name, existing_habit):
+    print(f"Stacking your habit '{habit_name}' onto an existing habit: {existing_habit}")
+    time.sleep(1)
+    print(f"Great! You now have a habit stack: '{existing_habit}' followed by '{habit_name}'.")
+
+# 主程式
+def atomic_habits_simulator():
+    print("Welcome to the Atomic Habits Simulator!")
+    
+    habit_name = input("What habit would you like to work on? (e.g., Reading, Exercise): ")
+    days = int(input("How many days would you like to track your habit? "))
+    
+    start_habit(habit_name)
+    track_progress(habit_name, days)
+    habit_identity(habit_name)
+
+    # 假設使用者已有一個習慣並要疊加新習慣
+    existing_habit = input("Do you have an existing habit to stack with your new habit? (e.g., Brushing teeth): ")
+    habit_stack(habit_name, existing_habit)
+    
+    stop_habit(habit_name)
+    
+    print("Good job! Keep improving your habits little by little.")
+
+# 執行模擬
+if __name__ == "__main__":
+    atomic_habits_simulator()
