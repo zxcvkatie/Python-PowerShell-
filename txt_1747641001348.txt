@@ -1,8 +1,8 @@
 import sys
 
 # Custom Vision or prediction service credentials
-prediction_url = "YOUR_PREDICTION_URL"
-prediction_key = "YOUR_PREDICTION_KEY"
+prediction_url = "https://a112070061text.cognitiveservices.azure.com/"
+prediction_key = "EfFn5GbMzy2utC6BauHdzDDinleT0eAKX2zGTY6AuAVKXML66RCxJQQJ99BEACYeBjFXJ3w3AAAEACOGSXPM"
 
 # Set image number based on arguments
 img_num = 1
